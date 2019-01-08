@@ -1,0 +1,37 @@
+{
+  "name": "austin-comments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack -w",
+    "server": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BetterJump/Austin-Comments.git"
+  },
+  "author": "Austin Stotts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BetterJump/Austin-Comments/issues"
+  },
+  "homepage": "https://github.com/BetterJump/Austin-Comments#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "~7",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jest": "^23.6.0",
+    "moment": "^2.23.0",
+    "prop-types": "^15.6.2",
+    "radium": "^0.25.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
+  }
+}
