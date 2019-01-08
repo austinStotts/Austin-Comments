@@ -6,7 +6,9 @@
   "scripts": {
     "webpack": "webpack -w",
     "server": "node ./server.js",
-    "start": "npm i; webpack"
+    "start": "npm i; webpack",
+    "setup": "pm2 deploy ecosystem.config.js production setup",
+    "deploy": "pm2 deploy ecosystem.config.js production"
   },
   "repository": {
     "type": "git",
