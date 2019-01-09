@@ -41,16 +41,13 @@ class Input extends PureComponent {
 
   render () {
     return (
-      <div
-        style={this.props.specialDiv}
-      >
+      <div style={this.props.specialDiv}>
         <input
           onChange={this.handleChangeInput}
           onKeyDown={this.handleKeyDown}
           style={this.props.special}
           placeholder={this.props.placeholder}
-          ref={'input'}
-        >
+          ref={'input'}>
         </input>
         <button
           onClick={_=>this.runFunc(this.state.text)}
@@ -63,13 +60,13 @@ class Input extends PureComponent {
 }
 
 Input.propTypes = {
-  func: PropTypes.func.isRequired,
-  placeholder: PropTypes.string,
-  btnText: PropTypes.string,
-  special: PropTypes.object,
-  specialBtn: PropTypes.object,
-  specialDiv: PropTypes.object,
-  clear: PropTypes.bool
+  func: PropTypes.func.isRequired, // what to invoke on 'Enter'
+  placeholder: PropTypes.string, // placeholder text for input field
+  btnText: PropTypes.string, // text to display on button
+  special: PropTypes.object, // special css object
+  specialBtn: PropTypes.object, // special css object for button
+  specialDiv: PropTypes.object, // special css object for div
+  clear: PropTypes.bool // bool to clear input on 'Enter' or not
 }
 
 export default Input;

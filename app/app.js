@@ -1,11 +1,14 @@
+// NPM Modules
 import React, { Component, PureComponent } from 'react';
 import ReactDOM from 'react-dom';
 import Axios from 'axios';
 
+// Components from files
 import Comment from './components/comment';
-import Input from './components/inputBar';
+import Input from './components/input';
 import MoreCommentsButton from './components/moreComments';
 
+// Root node
 class App extends PureComponent {
   constructor (props) {
     super(props);
@@ -17,7 +20,6 @@ class App extends PureComponent {
     }
   }
 
-
   componentDidMount () {
     // get comments from with project id
     // set state with given comments
@@ -28,7 +30,7 @@ class App extends PureComponent {
       <div>
         <h1>{'Jump Start Comment Section'}</h1>
         <Comment text={'this is a comment :)'} special={{color:'red',fontSize:'20px'}}/>
-        <Input func={(text) => console.log('this is the text ->',text)} btnText={'enter'} placeholder={'jot something down...'}/>
+        <Input specialDiv={{height:'20px'}} special={{width:'180px',height:'100%'}} specialBtn={{height:'100%'}} func={(text) => console.log('this is the text ->',text)} btnText={'enter'} placeholder={'jot something down...'}/>
       </div>
     )
   }

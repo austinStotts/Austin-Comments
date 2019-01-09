@@ -22,9 +22,9 @@ class Comment extends PureComponent {
 }
 
 Comment.propTypes = {
-  text: PropTypes.string.isRequired,
-  special: PropTypes.object,
-  specialDiv: PropTypes.object
+  text: PropTypes.string.isRequired, // what text is rendered
+  special: PropTypes.object, // special css object
+  specialDiv: PropTypes.object // special css object for div
 }
 
 export default Comment;
